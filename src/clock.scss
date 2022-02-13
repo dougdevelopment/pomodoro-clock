@@ -1,0 +1,256 @@
+#app-container{
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(180deg, #9CC5EA 0%, #FFFFFF 100%);
+}
+
+#left{
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+#clock-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    background: #FFFFFF;
+    box-shadow: 24px 24px 48px rgba(165, 196, 224, 0.96), inset 12px 12px 24px #DEEBF8, inset -24px -24px 48px #D7E7F7;
+    border-radius: 100px;
+}
+
+#right{
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    align-items: center;
+    justify-content: space-evenly;
+}
+h2{
+    text-align: center;
+}
+
+#session-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #FFFFFF;
+    box-shadow: 24px 24px 48px rgba(165, 196, 224, 0.96), inset 12px 12px 24px #DEEBF8, inset -24px -24px 48px #D7E7F7;
+    border-radius: 80px;
+    height: 30vh;
+    width: 80%;
+    min-height: 200px;
+}
+
+#break-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #FFFFFF;
+    box-shadow: 24px 24px 48px rgba(165, 196, 224, 0.96), inset 12px 12px 24px #DEEBF8, inset -24px -24px 48px #D7E7F7;
+    border-radius: 80px;
+    height: 30vh;
+    width: 80%;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    min-height: 200px;
+}
+
+#timer-container{
+    margin-top: 60px;
+    width: 85%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.controls{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    
+}
+.progressbar-container{
+    width: 82%;
+    height: 800%;
+}
+
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    border: 4px solid #4A9EEC;
+    box-sizing: border-box;
+    filter: drop-shadow(6px 6px 12px #BDDFFE);
+    border-radius: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    line-height: 15px;
+    background-color: none;
+}
+.button:hover{
+    background-color: #4A9EEC;
+}
+
+.b-icon{
+    width: 60%;
+    height: 60%;
+}
+
+.time-display-text{
+    width: 100px;
+    text-align: center;
+}
+
+/*Play Pause Control*/
+.button-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #4AACF3;
+    box-shadow: 6px 6px 12px #207DD2, inset -12px -12px 24px #007ED9;
+    border-radius: 15px;
+    width: 60px;
+    height: 25px;
+    padding: 10px;
+}
+.button-icon{
+    width: 20px;
+    height: 20px;
+    fill: white;
+}
+.button-main:hover{
+    background-color: #D7E7F7;
+    outline: none;
+    box-shadow: 6px 6px 12px #207DD2, inset 4px 4px 6px #4A9EEC;;
+}
+.button-main:hover .button-icon{
+    fill: #4A9EEC;
+}
+
+/*reset button*/
+.button-cover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    border-radius: 15px;
+    width: 200px;
+    height: 40px;
+    padding: 10px;
+    color: black;
+    margin-top: 20px;
+    border: 2px solid #4A9EEC;
+    margin-bottom: 20px;
+}
+.button-cover:hover{
+    background-color: #4AACF3;
+    border: 2px solid #4AACF3;
+    color: white;
+}
+
+#clock-display-container{
+   width: 100%;
+   height: 100%;
+}
+#circle{
+    stroke-width: 0.2;
+    fill: none;
+    stroke: red;
+}
+
+/*
+Progress bar
+ */
+
+ .CircularProgressbar {
+    width: 100%;
+    vertical-align: middle;
+  }
+  
+   .CircularProgressbar-path {
+    stroke: #3e98c7;
+    stroke-linecap: round;
+    transition: stroke-dashoffset 0.1s ease 0s;
+  }
+  
+  .CircularProgressbar .CircularProgressbar-trail {
+    stroke: #d6d6d6;
+    stroke-linecap: round;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  
+  .CircularProgressbar .CircularProgressbar-text {
+    fill: #3e98c7;
+    font-size: 20px;
+    dominant-baseline: middle;
+    text-anchor: middle;
+  }
+  
+  .CircularProgressbar .CircularProgressbar-background {
+    fill: #d6d6d6;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  
+  .CircularProgressbar.CircularProgressbar-inverted .CircularProgressbar-background {
+    fill: #3e98c7;
+  }
+  
+  .CircularProgressbar.CircularProgressbar-inverted .CircularProgressbar-text {
+    fill: #fff;
+  }
+  
+  .CircularProgressbar.CircularProgressbar-inverted .CircularProgressbar-path {
+    stroke: #fff;
+  }
+  
+  .CircularProgressbar.CircularProgressbar-inverted .CircularProgressbar-trail {
+    stroke: transparent;
+  }
+
+@media only screen and (max-width: 800px) {
+
+    #app-container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #left{
+        width: 90vw;
+        height: auto;
+        margin-top: 5vh;
+    }
+
+    #right{
+        width: 90vw;
+    }
+
+    #clock{
+        width: 300px;
+        height: 300px;
+    }
+    .button-main{
+        height: 20px;
+        width: 40px;
+    }
+    #session-container{
+        margin-top: 5vh;
+    }
+
+}
